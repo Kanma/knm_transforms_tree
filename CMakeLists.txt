@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.0)
+project(KNM_TRANSFORMS_TREE)
+
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${KNM_TRANSFORMS_TREE_BINARY_DIR}/bin")
+
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake" ${CMAKE_MODULE_PATH})
+
+add_subdirectory(unittests)
+add_subdirectory(docs)
